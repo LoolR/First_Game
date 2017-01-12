@@ -119,13 +119,13 @@ monde = Monde.new
 
 # Ajout des ennemis
 monde.ennemis = [
-  Ennemi.new("Balrog"),
-  Ennemi.new("Goblin"),
-  Ennemi.new("Squelette")
+  Ennemi.new("Fishu"),
+  Ennemi.new("Oggy"),
+  Ennemi.new("Joey")
 ]
 
 # Initialisation du joueur
-joueur = Joueur.new("Jean-Michel Paladin")
+joueur = Joueur.new("Fatima Zahrae")
 
 # Message d'introduction. \n signifie "retour à la ligne"
 puts "\n\nAinsi débutent les aventures de #{joueur.nom}\n\n"
