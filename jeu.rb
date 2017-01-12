@@ -13,7 +13,9 @@ class Personne
       return nom+ " "+points_de_vie.to_s
     # - Renvoie le nom et "vaincu" si la personne a été vaincue
     else
-      abort(nom+" a été vaincu!!")
+      puts nom+" a été vaincu!!"
+      gets
+      exit
     end
   end
 
