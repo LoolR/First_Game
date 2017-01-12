@@ -8,11 +8,7 @@ class Personne
   end
 
   def info
-<<<<<<< HEAD
 
-=======
-    # A faire:
->>>>>>> origin/master
     # - Renvoie le nom et les points de vie si la personne est en vie
     if en_vie==true && points_de_vie>0
       return nom+ " "+points_de_vie.to_s
@@ -23,11 +19,7 @@ class Personne
   end
 
   def attaque(personne)
-<<<<<<< HEAD
 
-=======
-    # A faire:
->>>>>>> origin/master
     # - Fait subir des dégats à la personne passée en paramètre
      a=rand(1..20)
     personne.points_de_vie=personne.points_de_vie-a
@@ -37,11 +29,7 @@ class Personne
   end
 
   def subit_attaque(degats_recus)
-<<<<<<< HEAD
 
-=======
-    # A faire:
->>>>>>> origin/master
     # - Réduit les points de vie en fonction des dégats reçus
     points_de_vie=points_de_vie-degats_recus
     # - Affiche ce qu'il s'est passé
@@ -66,17 +54,12 @@ class Joueur < Personne
     super(nom)
   end
 
-<<<<<<< HEAD
+
+
 
   def soin
-      # - Gagner de la vie
-=======
-  end
-
-  def soin
-    # A faire:
     # - Gagner de la vie
->>>>>>> origin/master
+
      b=rand(1..20)
     @points_de_vie=@points_de_vie+b
     # - Affiche ce qu'il s'est passé
@@ -84,11 +67,7 @@ class Joueur < Personne
   end
 
   def ameliorer_degats
-<<<<<<< HEAD
 
-=======
-    # A faire:
->>>>>>> origin/master
     # - Augmenter les dégats bonus
 
      c=rand(1..20)
@@ -100,11 +79,7 @@ class Joueur < Personne
 end
 
 class Ennemi < Personne
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> origin/master
 end
 
 class Jeu
@@ -125,11 +100,7 @@ class Jeu
   end
 
   def self.est_fini(joueur, monde)
-<<<<<<< HEAD
 
-=======
-    # A faire:
->>>>>>> origin/master
     # - Déterminer la condition de fin du jeu
   end
 end
@@ -138,11 +109,7 @@ class Monde
   attr_accessor :ennemis
 
   def ennemis_en_vie
-<<<<<<< HEAD
 
-=======
-    # A faire:
->>>>>>> origin/master
     # - Ne retourner que les ennemis en vie
     ennemis.each do |ennemi|
       if ennemi.en_vie==false
