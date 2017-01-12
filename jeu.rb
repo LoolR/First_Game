@@ -8,7 +8,6 @@ class Personne
   end
 
   def info
-
     # - Renvoie le nom et les points de vie si la personne est en vie
     if en_vie==true && points_de_vie>0
       return nom+ " "+points_de_vie.to_s
@@ -19,7 +18,6 @@ class Personne
   end
 
   def attaque(personne)
-
     # - Fait subir des dégats à la personne passée en paramètre
      a=rand(1..20)
     personne.points_de_vie=personne.points_de_vie-a
@@ -29,7 +27,6 @@ class Personne
   end
 
   def subit_attaque(degats_recus)
-
     # - Réduit les points de vie en fonction des dégats reçus
     points_de_vie=points_de_vie-degats_recus
     # - Affiche ce qu'il s'est passé
@@ -54,12 +51,8 @@ class Joueur < Personne
     super(nom)
   end
 
-
-
-
   def soin
     # - Gagner de la vie
-
      b=rand(1..20)
     @points_de_vie=@points_de_vie+b
     # - Affiche ce qu'il s'est passé
@@ -181,12 +174,6 @@ puts "\n\nAinsi débutent les aventures de #{joueur.nom}\n\n"
 end
 
 puts "\nGame Over!\n"
-
-<<<<<<< HEAD
-
-=======
-# A faire:
->>>>>>> origin/master
 # - Afficher le résultat de la partie
 puts "Etat du hero: "+joueur.nom+"(#{joueur.points_de_vie}/100)"
 if joueur.en_vie
