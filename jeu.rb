@@ -54,12 +54,6 @@ class Joueur < Personne
     super(nom)
   end
 
-  def degats
-    # A faire:
-    # - Calculer les dégats
-
-    # - Affiche ce qu'il s'est passé
-      # puts nom+ " subit"+
   end
 
   def soin
@@ -84,10 +78,7 @@ class Joueur < Personne
 end
 
 class Ennemi < Personne
-  def degats
-    # A faire:
-    # - Calculer les dégats
-  end
+ 
 end
 
 class Jeu
